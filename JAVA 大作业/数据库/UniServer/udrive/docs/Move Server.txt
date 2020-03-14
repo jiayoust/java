@@ -1,0 +1,81 @@
+################################################################################
+# File name: Move Server.txt
+# Created By: The Uniform Server Development Team
+# Edited Last By: Mike Gleaves (ric) 
+# V 1.0 28-2-2009
+################################################################################
+
+Note: This script must be run on a clean install of Uniform Server Mona
+
+To run multi-servers on the same PC several items require changing such as
+server ports, Apache and UniController executable names. With the exception
+of running as a service eAccelerator needs to be disabled.
+
+To manually change these can be time consuming and prone to errors the process
+has been automated with the following script: move_server.pl
+
+Run:
+The script is run from the following batch file Run.bat located in folder:
+UniServer\udrive\plugins\move_servers
+Double click Run.bat and enter appropriate values.   
+
+Unless you want to use specific ports and names accept defaults shown in
+brackets by pressing enter.
+
+Note: If you change service or Apache executable names make sure these have
+eight or less characters.
+
+The script uses existing names and either adds a digit to end of this name or
+increments an exiting one. Ports are incremented invalid ports are skipped.
+
+When run for the first time the outputs looks like this:
+
+################################################################################
+ Current Apache port = 80         Proposed port [81] :
+ Current SSL port    = 443        Proposed port [444] :
+ Current MySQL port  = 3306       Proposed port [3307] :
+ Current Apache name = Apache.exe Proposed name [Apache1.exe] :
+
+ ===== SERVICE Path and Service names ====
+
+ Current Path = c:/UniServer   Proposed path = [c:/UniServer1] :
+ Current Apache name = Apache2 Proposed name = [Apache3] :
+ Current MySQL  name = MySQL Proposed name = [MySQL1] :
+
+ ===== Controller Executable name  ====
+
+ Current = UniController.exe Proposed [UniController1.exe] :
+
+ ===== eAccelerator  ====
+
+ If running a single server do not disable eAccelerator.
+ For multi-servers enter YES
+
+ Disable_eAccelerator type YES or N [YES] :
+
+ Commit type Y or N [Y] :
+################################################################################
+
+If you know how many additional servers you wish to run create them at the same
+time, just makes the task a little easier.
+
+1) Extract a new copy of Mona
+2) Move the server using the above script.
+3) Clone this server (copy to a new folder)
+4) Move the server using the above script.
+5) Repeat steps 3 to 4 for each new server.
+
+General Notes:
+
+If all the servers are to be installed as a service
+there is no need to disable eAccelerator.
+
+If the servers are to be run in either Basic or Disk-root mode eAccelerator
+must be disabled otherwise Apache will fail to start.
+
+Remember that to access server pages append the new port number for example
+if the server was moved to port 81 type the following into your browser:
+
+http://localhost:81/
+
+---------------------------------- End -----------------------------------------

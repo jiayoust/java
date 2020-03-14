@@ -1,0 +1,139 @@
+--------------------
+The Server Structure
+--------------------
+
+z:\www
+  Document root (/).
+	By default:
+	ReadmeName README.html
+	HeaderName HEADER.html
+	server-parsed .shtml .shtm .sht
+	DirectoryIndex index.html index.shtml index.html.var 
+                       index.htm index.php3 index.php index.pl 
+                       index.cgi
+z:\www\images
+  Images directory
+
+z:\ssl
+  Secure Document root (/).
+	By default:
+	server-parsed .shtml .shtm .sht
+	DirectoryIndex index.html index.shtml index.html.var 
+                       index.htm index.php3 index.php index.pl 
+                       index.cgi
+
+z:\css
+  Common ccs files
+
+z:\wwws\images
+  Images directory
+
+z:\cgi-bin
+  Script root (/cgi-bin/).
+	By default:
+	cgi-script .bat .exe .pl .cgi
+
+
+z:\home
+  Users home page.
+
+z:\home\admin
+  Administration page.
+z:\home\admin\Www
+  Server administration pages root (/apanel/);
+z:\home\admin\www/cgi-bin
+  Server administration script root (/apanel/cgi-bin/);
+z:\home\admin\program
+  Server administration programs;
+z:\home\admin\Www\phpMyAdmin
+  MySQL administrator (/apanel/phpMyAdmin/)
+z:\home\admin\Www\plugins
+  Admin Plugins directory.
+z:\home\admin\www\icons
+  Admin Panel Icons
+z:\home\admin\www\images
+  Admin Panel Images
+z:\home\admin\www\rss
+  RSS Parser
+
+z:\usr
+  User Program directory
+
+z:\usr\bin
+  PERL folder.
+z:\usr\lib
+  Selected PERL libraries. To have all libraries download "perl_modules"
+
+z:\usr\local
+  Program folder.
+
+z:\usr\local\apache2
+  Apache2 folder.
+z:\usr\local\apache2\bin
+  Apache2 binaries.
+  A copy of php.ini should be placed here for php module!
+z:\usr\local\apache2\conf
+  Apache2 configuration files. (see httpd.conf)
+z:\usr\local\apache2\icons
+  Apache2 icons.
+z:\usr\local\apache2\logs
+  Apache2 logs.
+z:\usr\local\apache2\modules
+
+
+z:\usr\local\mysql
+  MySQL folder.
+z:\usr\local\mysql\bin
+  MySQL binaries.
+z:\usr\local\mysql\data
+  MySQL databases.
+z:\usr\local\mysql\share
+  MySQL share.
+
+z:\usr\local\php
+  PHP folder. (see php.ini)
+	By default:
+	register_globals = On - But you should do your best to write 
+	your scripts so that they do not require register_globals to be on. 
+	The easy way to use such variables "$step=$HTTP_POST_VARS['Submit'];".
+        Or "import_request_variables("gP", "st");" - see PHP documentation.
+z:\usr\local\php\logs
+  PHP log files
+z:\usr\local\php\extensions
+  PHP Extensions
+ 
+             
+z:\tmp
+  Temporally folder.
+      
+         
+z:\plugins
+  Server Plugins directory.
+z:\plugins\Services
+  Uniform Server Sercives Script (For NT)         
+z:\plugins\key_cert_gen   
+  Server SSL certificate and key generater scripts (ssl_098i) 
+z:\plugins\key_cert_gen\gen   
+  SSL scripts and program 
+
+z:\docs
+  Uniform Server Documentation (/docs/)
+
+
+z:\docs\src
+  Uniform Server Source Files
+
+
+z:\htpasspwd
+  Uniform Server HTPASSWD dirctory
+        By default:
+        Contains the dir for the htpasswds of admin and www
+         
+
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

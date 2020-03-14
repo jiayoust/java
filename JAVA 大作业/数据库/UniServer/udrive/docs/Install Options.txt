@@ -1,0 +1,81 @@
+################################################################################
+# File name: Install Options.txt
+# Created By: The Uniform Server Development Team
+# Edited Last By: Mike Gleaves (ric) 
+# V 1.0 14-1-2009
+################################################################################
+
+Uniform Server 4.0-Mona has several install options these are covered below.
+
+1) Basic
+Extract Uniform Server 4.0-Mona to any folder (on any hard drive or USB stick);
+navigate to folder UniServer where you will find the following files:
+
+  * UniController.exe  -- start and stop servers
+  * Server_Start.bat   -- start servers
+  * Stop.bat           -- top servers
+  * disk_start.vbs     -- start servers
+
+Note: A virtual drive is created and the servers are run from this drive.
+
+2) Disk root
+
+After extracting Uniform Server 4.0-Mona to any folder of your choice. Copy server to
+a drive root (top level of a hard drive or top level of USB memory stick) as follows:
+
+ * Copy the entire contents of folder \uniform_server\udrive to a drives root.
+   (That’s all folders including the two batch files usb_server_start.bat and usb_server_stop.bat)
+ * Finally copy UniController.exe (found in folder UniServer) to a drive's root. 
+
+These files allow you to start and stop the servers.
+ * UniController.exe
+ * usb_server_start.bat
+ * usb_server_stop.bat
+
+Note 1: A virtual drive is NOT created the servers run from the top level of a drive.
+
+3) Run as a service
+
+After extracting Uniform Server 4.0-Mona to any folder of your choice, navigate to
+folder: \uniform_server\udrive\plugins\Services and run the batch file named Run.bat
+
+This starts the server conversion and copy process. You many see the process pause please
+wait for the process to finish. On completion servers are installed and run as a service.
+If not already running your browser will start and display apanel.
+
+Note 1: If you wish to save space delete the extracted files.
+
+Note 2: The original server has been processed and copied to folder C:\UniServer inside
+this you will find two files: 
+
+  * Install.bat   -- Install and start services 
+  * Uninstall.bat –- Stop and uninstall services
+
+These now control the servers, if you modify Apache’s configuration file for the new configuration
+setting to be pick-up you must uninstall and re-install the services. 
+
+
+Web root folders are located as follows:
+  * C:\UniServer\www
+  * C:\UniServer\ssl
+
+Note 3: Before running Run.bat you may wish to change the drive and or folder.
+
+Edit the following file: \uniform_server\udrive\plugins\Services\w2c1.pl
+
+Locate the line: $pathc="c:/UniServer"; and change to suite your requirements
+
+e.g.
+
+ $pathc="e:";          -- Would install to drive e (top-level of disk)
+ $pathc="h:/myserver"; -- Would install to drive h sub-folder myserver
+
+
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+

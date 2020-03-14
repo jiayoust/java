@@ -1,0 +1,145 @@
+package Person类的继承;
+
+abstract class Person {
+	private String strName;//用户名
+	private String strsno;//密码
+	public Person(String inName, String inSno)
+	{
+		this.strName=inName;
+		this.strsno=inSno;
+	}
+	
+	public abstract void Login(String x,String y);
+	
+	public String getStrName() {
+		return strName;
+	}
+	public void setStrName(String strName) {
+		this.strName = strName;
+	}
+
+	public String getStrsno() {
+		return strsno;
+	}
+
+	public void setStrsno(String strsno) {
+		this.strsno = strsno;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+package Person类的继承;
+
+public class Student extends Person {
+	public Student(String inName, String inSno) {
+		super(inName, inSno);
+		// TODO Auto-generated constructor stub
+	}
+	public void Login(String x,String y)
+	{
+		if(this.getStrName().equals(x)&&this.getStrsno().equals(y))
+		{
+			System.out.println("欢迎"+this.getStrName()+"学生光临！");
+		}
+	}
+	
+
+}
+
+
+
+
+
+
+
+package Person类的继承;
+
+public class Teacher extends Person {
+	public Teacher(String inName, String inSno) {
+		super(inName, inSno);
+		// TODO Auto-generated constructor stub
+	}
+	public void Login(String x,String y)
+	{
+		if(this.getStrName().equals(x)&&this.getStrsno().equals(y))
+		{
+			System.out.println("欢迎"+this.getStrName()+"老师光临！");
+		}
+	}
+}
+
+
+
+
+
+
+
+package Person类的继承;
+
+public  class Administrator extends Person {
+
+
+	public Administrator(String inName, String inSno) {
+		super(inName, inSno);
+	}
+
+
+		public void Login(String x, String y) {
+		// TODO Auto-generated method stub
+		if(this.getStrName().equals(x)&&this.getStrsno().equals(y))
+		{
+			System.out.println("欢迎"+this.getStrName()+"管理员光临！");
+		}
+		
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+package Person类的继承;
+import java.util.Scanner;
+public class Test{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+Person  per[] = new Person[6];
+per[0] = new Teacher("zhang","zhang");
+per[1] = new Teacher("li","zhang");
+
+per[2] = new Student("wang","zhang");
+per[3] = new Student("zheng","zhang");
+
+per[4] = new Administrator("admin","zhang");
+per[5] = new Student("wu","zhang");
+
+String username,pass;
+Scanner sc = new Scanner(System.in);
+System.out.println("分别输入用户名和密码");
+username =  sc.nextLine();
+pass = sc.nextLine();
+for(int i=0;i<6;i++)
+{
+   per[i].Login(username,pass);
+}	
+	}
+
+}

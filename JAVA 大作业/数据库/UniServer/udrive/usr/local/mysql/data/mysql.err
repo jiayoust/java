@@ -1,0 +1,44 @@
+110718 10:37:31 [Note] Plugin 'InnoDB' disabled by command line option
+110718 10:37:31 [Note] Event Scheduler: Loaded 0 events
+110718 10:37:31 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+110720 16:10:17 [Note] Plugin 'InnoDB' disabled by command line option
+110720 16:10:17 [Note] Event Scheduler: Loaded 0 events
+110720 16:10:17 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+161213 18:17:11 [Note] Plugin 'InnoDB' disabled by command line option
+180604 17:52:55 [Note] Plugin 'InnoDB' disabled by command line option
+180604 19:30:55 [Note] Plugin 'InnoDB' disabled by command line option
+180612 21:06:07 [Note] Plugin 'InnoDB' disabled by command line option
+180612 21:06:07 [Note] Event Scheduler: Loaded 0 events
+180612 21:06:07 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180613 21:51:43 [Note] Plugin 'InnoDB' disabled by command line option
+180613 21:51:43 [Note] Event Scheduler: Loaded 0 events
+180613 21:51:43 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180614 17:26:12 [Note] Plugin 'InnoDB' disabled by command line option
+180616 17:38:19 [Note] Plugin 'InnoDB' disabled by command line option
+180617 13:34:08 [Note] Plugin 'InnoDB' disabled by command line option
+180617 21:14:07 [Note] Plugin 'InnoDB' disabled by command line option
+180618 14:40:58 [Note] Plugin 'InnoDB' disabled by command line option
+180619 12:55:19 [Note] Plugin 'InnoDB' disabled by command line option
+180621 15:51:51 [Note] Plugin 'InnoDB' disabled by command line option
+180624 19:57:10 [Note] Plugin 'InnoDB' disabled by command line option
+180624 19:57:11 [Note] Event Scheduler: Loaded 0 events
+180624 19:57:11 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180701 18:10:31 [Note] Plugin 'InnoDB' disabled by command line option
+180701 18:10:45 [Note] Plugin 'InnoDB' disabled by command line option
+180701 18:11:45 [Note] Plugin 'InnoDB' disabled by command line option
+180701 18:11:45 [Note] Event Scheduler: Loaded 0 events
+180701 18:11:45 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180701 18:11:45 [ERROR] mysqld: Got error 10038 from select
+180701 18:13:49 [Note] Plugin 'InnoDB' disabled by command line option
+180701 18:13:49 [Note] Event Scheduler: Loaded 0 events
+180701 18:13:49 [Note] Z:\usr\local\mysql\bin\mysqld-opt.exe: ready for connections.
+Version: '5.1.33-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180704 13:25:08 [Note] Plugin 'InnoDB' disabled by command line option
+180704 23:31:32 [Note] Plugin 'InnoDB' disabled by command line option
+180704 23:33:53 [Note] Plugin 'InnoDB' disabled by command line option
